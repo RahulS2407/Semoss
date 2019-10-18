@@ -1,0 +1,8 @@
+{
+  "layout": "Grid",
+  "rdbmsId": "b5056848-70f2-4bec-8d1e-01082079c04b",
+  "hidden": false,
+  "insightName": "Show first 500 records from productoptions",
+  "recipe": "AddPanel(0);Panel(0)|SetPanelView(\"visualization\");CreateFrame(grid).as([FRAME]);Database(\"595ebe4d-b6ae-4fbe-83bd-2e67d8f0ecb7\") | SelectTable(productoptions) | Limit(500) | Import();Frame() | QueryAll() | AutoTaskOptions(panel\u003d[\"0\"], layout\u003d[\"GRID\"]) | Collect(500);",
+  "engineId": "595ebe4d-b6ae-4fbe-83bd-2e67d8f0ecb7"
+}
