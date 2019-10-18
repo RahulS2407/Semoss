@@ -1,0 +1,8 @@
+{
+  "layout": "Grid",
+  "rdbmsId": "87b22d11-3312-4ee2-b468-819b88e18c69",
+  "hidden": false,
+  "insightName": "Show first 500 records from productcategories",
+  "recipe": "AddPanel(0);Panel(0)|SetPanelView(\"visualization\");CreateFrame(grid).as([FRAME]);Database(\"595ebe4d-b6ae-4fbe-83bd-2e67d8f0ecb7\") | SelectTable(productcategories) | Limit(500) | Import();Frame() | QueryAll() | AutoTaskOptions(panel\u003d[\"0\"], layout\u003d[\"GRID\"]) | Collect(500);",
+  "engineId": "595ebe4d-b6ae-4fbe-83bd-2e67d8f0ecb7"
+}
